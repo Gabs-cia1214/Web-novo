@@ -1,0 +1,133 @@
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.85)),
+              url('imagem213.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #eee; /* deixa o texto claro */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  animation: fadeIn 1s ease-in-out;
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    background-position: center top;
+  }
+  to {
+    opacity: 1;
+    background-position: center center;
+  }
+}
+h1 {
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+p {
+  text-align: justify;
+  font-size: 1rem; /* 16px */
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 1.5rem auto;
+  color: #ddd;
+}
+
+header {
+  background-color: #222;
+  padding: 15px 0;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.7);
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+.navbar {
+max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.nav-item {
+ color: #ddd;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.25s ease;
+  position: relative;
+}
+
+.nav-item::after {
+  content: '';
+  display: block;
+  width: 0%;
+  height: 3px;
+  background: #00c6ff;
+  transition: width 0.3s ease;
+  position: absolute;
+  bottom: -6px;
+  left: 0;
+}
+
+.nav-item:hover {
+  color: #00c6ff;
+}
+
+.nav-item:hover::after {
+  width: 100%;
+}
+
+.suse-mono {
+  font-family: "SUSE Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+  color: #00c6ff;
+  background-color: rgba(30, 30, 30, 0.7);
+  padding: 5px 10px;
+  border-radius: 4px;
+  display: inline-block;
+}
+main {
+  max-width: 800px;
+  margin: 100px auto 40px; /* afasta o main do header e do rodapé */
+  padding: 30px 25px;
+  background-color: rgba(30, 30, 30, 0.85); /* fundo semitransparente escuro */
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.6);
+  color: #eee;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+main h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #00c6ff;
+  text-shadow:  0 0 8px #00c6ff;
+}
+
+main p {
+  font-size: 1.125rem; /* 18px */
+  line-height: 1.7;
+  margin-bottom: 25px;
+  font-weight: 300;
+  text-align: justify;
+  color: #ddd;
+   text-shadow: 0 0 3px rgba(0,0,0,0.7);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #1e1e1e;
+  color: #999;
+  font-size: 0.9rem;
+}
